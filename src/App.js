@@ -1,18 +1,25 @@
+import { useState } from "react";
 import "./App.css";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { Sidebar } from "./components/Sidebar";
 
 function App() {
+  const [darkMode,setDarkMode] = useState(false)
+
+  function toggle(){
+    setDarkMode(!darkMode)
+  }
+
   return (
-    <div >
+    <div  className={`${darkMode ? "dark" : ""}`}>
       <div className="flex h-fit relative">
-        <div className="w-[17%] h-screen fixed ">
+        <div className="w-[17%] h-screen fixed bg-white dark:bg-neutral-800 dark:text-neutral-300">
           <Sidebar/>
         </div>
         <div className="w-[83%] h-full absolute left-[17%]">
-          <Navbar/>
-          <Home/>
+          <Navbar darkMode={darkMode}/>
+          <Home toggle={toggle} darkMode={darkMode}/>
         </div>
       </div>
     </div>

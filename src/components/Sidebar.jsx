@@ -9,7 +9,7 @@ export const Sidebar = () => {
 
 
   return (
-    <div className='w-full h-full flex border shadow-lg flex-col '>
+    <div className='w-full h-full flex border-r shadow-lg flex-col '>
         <div className='h-[9%] flex px-5 mt-1 justify-between content-center'>
             <div className='flex justify-center content-center'>
                 <p className='mt-2 text-5xl font-thin content-center'><IoLayersOutline/></p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Item = ({data}) => {
   return (
-    <div className='flex flex-col border rounded-md p-6 gap-y-5 shadow-md bg-white'>
+    <div className='flex flex-col border rounded-md p-6 gap-y-5 shadow-md bg-white dark:bg-neutral-800'>
       <div className='flex justify-between '> 
           <p className='w-10 h-10 p-2 border content-center rounded-full bg-gray-100 cursor-pointer'><img src={data.proImg}/></p>
           <p className='text-2xl content-center cursor-pointer'>{data.sideIcon}</p>
