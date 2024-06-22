@@ -12,9 +12,9 @@ function App() {
   }
 
   return (
-    <div  className={`${darkMode ? "dark" : ""}`}>
+    <div  className={`${darkMode ? "dark " : ""}`}>
       <div className="flex h-fit relative">
-        <div className="w-[17%] h-screen fixed bg-white dark:bg-neutral-800 dark:text-neutral-300">
+        <div className="w-[17%] h-screen fixed bg-white dark:bg-neutral-800 dark:text-neutral-300 transition duration-300">
           <Sidebar/>
         </div>
         <div className="w-[83%] h-full absolute left-[17%]">
