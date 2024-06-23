@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD
   "name": "react-tailwind-starter-pack",
   "homepage": "https://ramgore45.github.io/uiCloneENBUILD",
+=======
+  "name": "react-tailwind-css-starter-pack",
+>>>>>>> 79cfd1d80b59ab57dfb65b426bcc052af6417f23
   "version": "0.1.0",
   "private": true,
   "dependencies": {
